@@ -4,9 +4,10 @@ import DistractionCharts from "./Components/Charts/DistractionCharts";
 import List from './Components/Todo List/List'
 import './App.css';
 import "./Styles/main.css"
-import SessionTimer from './Components/SessionTimer'
+import SessionTimer from './Components/SessionTimer';
 import AmbientLight from './Components/AmbientLight';
-import AmibientNoise from './Components/AmbientNoise'
+import AmbientNoise from './Components/AmbientNoise';
+import NoiseAnalysis from './Components/NoiseAnalysis';
 
 function App() {
   const data =  {distracted: {chromewhatsapp: 7.505834900000082}, focused: {"visual studio code": 0.0, "task switching": 0.0, "chrome-work": 0.0},
@@ -14,18 +15,19 @@ function App() {
   return (
     <div className="App">
       <SessionTimer />
-      <div className = "middle-container">
-        <div className = "middle-container__ambient">
-        <AmbientLight data = {Math.floor(data.light)} />
-        <AmibientNoise noiseData = {Math.floor(data.noise)}/>
-        </div>
-        <List/>
-      </div>
-      
       <div className = "chart__container"> 
       <Chart/>
       <DistractionCharts distractedData = {data.distracted}/>
       </div> 
+      <div className = "middle-container">
+        <div className = "middle-container__ambient">
+        <AmbientLight data = {Math.floor(data.light)} />
+        <AmbientNoise noiseData = {Math.floor(data.noise)}/>
+        </div>
+        <List/>
+      </div>
+      
+      <NoiseAnalysis />
   
      
     </div>

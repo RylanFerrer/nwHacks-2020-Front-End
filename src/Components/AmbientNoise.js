@@ -1,5 +1,5 @@
 import React from 'react'
-import noise from './images/noise.svg'
+import noise from './Images/noise.svg'
 import ComponentHeader from './ComponentHeader'
 
 export default function AmbientNoise(props) {

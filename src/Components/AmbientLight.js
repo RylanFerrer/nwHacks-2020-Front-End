@@ -1,5 +1,5 @@
 import React from 'react'
-import light from './images/light.svg'
+import light from './Images/light.svg'
 import ComponentHeader from './ComponentHeader'
 
 export default function AmbientLight(props) {
@@ -11,7 +11,7 @@ export default function AmbientLight(props) {
     }
  
     return (
-        <div class="Environment">
+        <div className="Environment">
             <ComponentHeader name="Ambient light" />
             <div className="envwrapper">
                 <img src={light} alt="a lightbulb"/>

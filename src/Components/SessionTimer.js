@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import clockIcon from "./images/clockIcon.svg"
+import clockIcon from "./Images/clock.svg"
 import ComponentHeader from "./ComponentHeader"
 
 export default function SessionTimer() {
