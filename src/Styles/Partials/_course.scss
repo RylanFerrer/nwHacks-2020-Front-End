@@ -1,0 +1,12 @@
+.Course {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: $shadow;
+}
+
+#course_name {
+    color: $purple;
+    font-size: 36px;
+}

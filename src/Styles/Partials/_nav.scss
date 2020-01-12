@@ -1,0 +1,23 @@
+$light_purple: rgba(91, 46, 180, 0.44);
+
+.current-active {
+    color:$purple;
+    border-bottom: 3px solid $purple;
+    padding: 5px;
+}
+
+.current-inactive {
+    color: $light_purple;
+    border: none;
+}
+
+.past-active {
+    color:$purple;
+    border-bottom: 3px solid $purple;
+    padding: 5px;
+}
+
+.past-inactive {
+    color: $light_purple;
+    border: none;
+}

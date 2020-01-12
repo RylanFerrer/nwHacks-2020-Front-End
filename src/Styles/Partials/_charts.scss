@@ -10,9 +10,9 @@
     }
     width: 50vw;
     height: 379px;
-    background-color: #ffffff;
+    background-color: #fff;
     border-radius: 20px;
-    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+    box-shadow: $shadow;
     &-header {
         padding: 0 5%;
         

@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import "./Partials/variables";
 @import "./Partials/distraction";
 @import "./Partials/breakpoints";
 @import "./Partials/modal";
 @import "./Partials/header";
 @import "./Partials/charts";
 @import "./Partials/timer";
+@import "./Partials/course";
+@import "./Partials/environment";
+
  body {
     font-family: 'Poppins', sans-serif;
      background-color:  #E5E5E5;

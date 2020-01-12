@@ -6,6 +6,7 @@ import './App.css';
 import "./Styles/main.css"
 import DistractionBreakdown from './Components/DistractionBreakdown'
 import SessionTimer from './Components/SessionTimer'
+import AmbientLight from './Components/AmbientLight';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <DistractionCharts/>
       </div>
       <SessionTimer />
+      <AmbientLight />
     </div>
   );
 }

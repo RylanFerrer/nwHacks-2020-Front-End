@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import clockIcon from "./images/clockIcon.svg"
+import ComponentHeader from "./ComponentHeader"
 
 export default function SessionTimer() {
     const [isActive, setActive] = useState(false);
@@ -36,15 +37,18 @@ export default function SessionTimer() {
 
     return (
         <div className = "SessionTimer">
-            <img src = "clockIcon" width = "90" height = "90" />
-            {
-                // FIX THIS 
-            }
-            <div className = "time">{formatTime(seconds)}</div>
-            <div id = "buttonGroup">
-                <button className = {`button-${isActive ? "active" : "inactive"}`} onClick={toggle}>
-                    {isActive ? "Pause" : "Start"}</button>
-                <button className = "reset" onClick={reset}>Stop</button>
+            <ComponentHeader name = "Session duration" />
+            <div className="thing">
+                <img src = "clockIcon" width = "90" height = "90" />
+                {
+                    // FIX THIS 
+                }
+                <div className = "time">{formatTime(seconds)}</div>
+                <div id = "buttonGroup">
+                    <button className = {`button-${isActive ? "active" : "inactive"}`} onClick={toggle}>
+                        {isActive ? "Pause" : "Start"}</button>
+                    <button className = "reset" onClick={reset}>Stop</button>
+                </div>
             </div>
         </div>
     )
