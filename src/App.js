@@ -16,7 +16,6 @@ function App() {
       <Chart/>
       <DistractionCharts/>
       </div>
-    
       <SessionTimer />
     </div>
   );
