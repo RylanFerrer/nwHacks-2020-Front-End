@@ -3,6 +3,8 @@ import ComponentHeader from './ComponentHeader'
 import noiseNobg from './Images/noiseNobg.svg'
 import MultiChart from './Charts/MultiChart'
 
+
+
 export default function NoiseAnalysis() {
     return (
         <div className="EnvAnalysisN">
