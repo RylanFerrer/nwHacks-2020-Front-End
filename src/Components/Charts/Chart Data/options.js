@@ -22,6 +22,9 @@ export const options = (dps, canvas) => {
         dataPoints: dps
     }],    
     axisX: {
+        intervalType: "hour",
+        valueFormatString: "YYYY-MM-DD HH:mm:ss",
+        labelMaxWidth: 100, // change label width accordingly
         scaleBreaks: {
             customBreaks: [
             ]
