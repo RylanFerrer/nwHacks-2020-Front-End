@@ -16,7 +16,7 @@ export default function DistractionCharts(props)
             {
                 valArray.map((num,index) => {
                     return (
-                        <div className = "chart__wrapper-bar-container">
+                        <div key = {index} className = "chart__wrapper-bar-container">
                             <h3 className = "chart__wrapper-bar-text">{distract[0][index]}</h3>
                             <div  className = "chart__wrapper-bar" style = { { height: "20px",width: 3 * num, backgroundColor: `${colors[index]}`}}>
                                 <p>{Math.floor(num)}%</p>
@@ -25,8 +25,6 @@ export default function DistractionCharts(props)
                     )}
                 )
             }
-            
-
         </div>
     )
 }
