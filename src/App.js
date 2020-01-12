@@ -11,6 +11,7 @@ function App() {
     <Route path = "/details" component = {Details}/>
   </Switch>
   )
+
 }
 
 export default App;
