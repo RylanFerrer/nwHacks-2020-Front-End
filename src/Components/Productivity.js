@@ -1,5 +1,5 @@
 import React from 'react'
-import header from './Images/header-girl.png'
+import header from './images/header-girl.png'
 
 export default function Productivity() {
 

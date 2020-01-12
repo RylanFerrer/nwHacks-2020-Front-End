@@ -1,6 +1,6 @@
 import React from 'react'
 import ComponentHeader from './ComponentHeader'
-import noiseNobg from './Images/noiseNobg.svg'
+import noiseNobg from './images/noiseNobg.svg'
 
 export default function NoiseAnalysis() {
     return (
