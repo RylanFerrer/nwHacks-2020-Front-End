@@ -15,6 +15,7 @@ export default function SessionTimer(props) {
         props.toggleSession()
         setSeconds(0);
         setActive(false);
+        props.changePage()
     }
 
     function formatTime(seconds) {
