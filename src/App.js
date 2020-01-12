@@ -66,10 +66,6 @@ function App() {
       
       <NoiseAnalysis />
       <Productivity />
-      <div className = "chart__container"> 
-      <Chart data = {data}/>
-      <DistractionCharts distractedData = {data.distracted}/>
-      </div> 
     </div>
   );
 }
