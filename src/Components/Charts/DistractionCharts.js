@@ -1,5 +1,5 @@
 import React from 'react'
-
+import ComponentHeader from '../ComponentHeader';
 export default function DistractionCharts() {
     const distractions = {
         Instagram: 1.6,
@@ -15,15 +15,15 @@ export default function DistractionCharts() {
     }
     return (
         <div className = "chart__wrapper chart__wrapper-dist">
-            <div className = "chart__wrapper-header">
-                <h4 className = "chart__wrapper-header-text">Distractions</h4>
-            </div>
+            <ComponentHeader name = "Distractions"/>
             {
                 valArray.map((num,index) => {
                     return (
                         <div className = "chart__wrapper-bar-container">
                             <h3 className = "chart__wrapper-bar-text">{distract[0][index]}</h3>
-                            <div  className = "chart__wrapper-bar" style = { { height: "20px",width: 3 * num, backgroundColor: `${colors[index]}`}}></div>
+                            <div  className = "chart__wrapper-bar" style = { { height: "20px",width: 3 * num, backgroundColor: `${colors[index]}`}}>
+                                <p>{num}%</p>
+                            </div>
                         </div>
                     )}
                 )
