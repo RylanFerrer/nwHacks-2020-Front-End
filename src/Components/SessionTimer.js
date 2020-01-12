@@ -2,15 +2,17 @@ import React, {useState, useEffect} from 'react'
 import clockIcon from "./Images/clock.svg"
 import ComponentHeader from "./ComponentHeader"
 
-export default function SessionTimer() {
+export default function SessionTimer(props) {
     const [isActive, setActive] = useState(false);
     const [seconds, setSeconds] = useState(0);
 
     function toggle() {
         setActive(!isActive);
+        props.toggleSession()
     }
 
     function reset() {
+        props.toggleSession()
         setSeconds(0);
         setActive(false);
     }
