@@ -8,6 +8,10 @@ import SessionTimer from './Components/SessionTimer';
 import AmbientLight from './Components/AmbientLight';
 import AmbientNoise from './Components/AmbientNoise';
 import NoiseAnalysis from './Components/NoiseAnalysis';
+import PieChart from './Components/Charts/PieChart';
+import Course from './Components/Course';
+import Productivity from './Components/Productivity';
+
 import AmibientNoise from './Components/AmbientNoise'
 import axios from 'axios'
 function App() {
@@ -44,12 +48,14 @@ function App() {
 
   return (
     <div className="App">
-      <SessionTimer />
+      <div className="top-container">
+          <Course name="CS 213"/>
+          <SessionTimer toggleSession = {toggle} />
+      </div>
       <div className = "chart__container"> 
       <Chart/>
       <DistractionCharts distractedData = {data.distracted}/>
       </div> 
-      <SessionTimer toggleSession = {toggle} />
       <div className = "middle-container">
         <div className = "middle-container__ambient">
         <AmbientLight data = {Math.floor(data.light)} />
@@ -59,6 +65,7 @@ function App() {
       </div>
       
       <NoiseAnalysis />
+      <Productivity />
       <div className = "chart__container"> 
       <Chart data = {data}/>
       <DistractionCharts distractedData = {data.distracted}/>

@@ -4,9 +4,15 @@
     background: #fff;
     border-radius: 20px;
     box-shadow: $shadow;
+    width:30vw;
+    height:25vh;
 }
 
 #course_name {
     color: $purple;
     font-size: 36px;
+    text-align: left;
+    margin-left: 5%;
+    font-size:80px;
+    font-weight: bold;
 }
