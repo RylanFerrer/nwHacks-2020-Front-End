@@ -1,14 +1,16 @@
 import React from 'react'
 import ComponentHeader from '../ComponentHeader';
-export default function DistractionCharts() {
+export default function DistractionCharts(props) 
+{
+    const {distractedData} = props;
     const distractions = {
         Instagram: 1.6,
         Sleeping: 10,
         SpacingOut: 4.1
     }
     const colors = ['#713ADB',' #49B8FF','#FF8C56','#FC5181']
-    let distract = [Object.keys(distractions)]
-    let values =  [Object.values(distractions)]
+    let distract = [Object.keys(distractedData)]
+    let values =  [Object.values(distractedData)]
     const valArray = []
     for(let i = 0 ; i < values[0].length; i++) {
         valArray.push((parseFloat(values[0][i]) / 10) * 100)
@@ -22,7 +24,7 @@ export default function DistractionCharts() {
                         <div className = "chart__wrapper-bar-container">
                             <h3 className = "chart__wrapper-bar-text">{distract[0][index]}</h3>
                             <div  className = "chart__wrapper-bar" style = { { height: "20px",width: 3 * num, backgroundColor: `${colors[index]}`}}>
-                                <p>{num}%</p>
+                                <p>{Math.floor(num)}%</p>
                             </div>
                         </div>
                     )}

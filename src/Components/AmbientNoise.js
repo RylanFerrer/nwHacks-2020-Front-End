@@ -1,13 +1,13 @@
 import React from 'react'
-import noise from './Images/noise.svg'
+import noise from './images/noise.svg'
 import ComponentHeader from './ComponentHeader'
 
 export default function AmbientNoise(props) {
-    const {data} = props;
+    const {data,noiseData} = props;
 
     const checker = () => {
-        if (data < 10) {return "quiet"}
-        else if (data >= 11 && data < 50) { return "asmr"}
+        if (noiseData < 10) {return "quiet"}
+        else if (noiseData >= 11 && data < 50) { return "asmr"}
         else {return "jet engine"}
     }
 
@@ -15,9 +15,9 @@ export default function AmbientNoise(props) {
         <div class="Environment">
             <ComponentHeader name="Ambient noise" />
             <div className="envwrapper">
-                <img src={light} alt="a speaker"/>
+                <img src={noise} alt="a speaker"/>
                 <div className="infowrapper">
-                    <div>{data}db</div>
+                    <div>{noiseData} db</div>
                     <div>{checker}</div>
                 </div>
             </div>

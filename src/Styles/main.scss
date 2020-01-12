@@ -14,3 +14,14 @@
     font-family: 'Poppins', sans-serif;
      background-color:  #E5E5E5;
  }
+ 
+ .middle-container {
+    justify-content: space-evenly;
+    display: flex;
+    height: 40vh;
+    margin: 2% 0;
+    &__ambient {
+        display: flex;
+        flex-direction: column;
+    }
+ }

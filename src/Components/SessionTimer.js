@@ -39,9 +39,9 @@ export default function SessionTimer() {
         <div className = "SessionTimer">
             <ComponentHeader name = "Session duration" />
             <div className="thing">
-                <img src = "clockIcon" width = "90" height = "90" />
+                <img src = {clockIcon} width = "90" height = "90" />
                 {
-                    // FIX THIS 
+                    // FIX THIS
                 }
                 <div className = "time">{formatTime(seconds)}</div>
                 <div id = "buttonGroup">
