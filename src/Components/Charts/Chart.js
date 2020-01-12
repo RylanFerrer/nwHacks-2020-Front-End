@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react';
 import CanvasJSReact from '../../Assets/Plugins/canvasjs.react';
+import ComponentHeader from "../ComponentHeader"
 import {options} from './Chart Data/options' 
 import Modal from '../Modal/Modal'
 const CanvasJSChart = CanvasJSReact.CanvasJSChart;
@@ -62,7 +63,7 @@ class Chart extends Component {
 			<div>
 			<Modal  changeActive = {this.changeActive}active = {this.state.active}/>
 			<div className = "chart__wrapper">
-				<h4>Efficency</h4>
+				<ComponentHeader name = "Efficency"/>
 				<CanvasJSChart id = "chart" options = {option} 
 					onRef={ref => this.chart = ref}
 				/>

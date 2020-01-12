@@ -8,7 +8,7 @@
             padding: 0 5%;
         }
     }
-    width: 862px;
+    width: 50vw;
     height: 379px;
     background-color: #ffffff;
     border-radius: 20px;
@@ -22,9 +22,14 @@
         }
     }
     &-dist {
-        width: 522px;
+        width: 40vw;
         height: 379px;
     }
+}
+.chart__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .canvasjs-chart-credit {
     display: none;
@@ -32,5 +37,5 @@
 
 .canvasjs-chart-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
