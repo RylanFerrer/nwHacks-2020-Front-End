@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CanvasJSReact from '../../Assets/Plugins/canvasjs.react';
+import {options} from './Chart Data/options' 
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 var dps = [{x: 1, y: 10}];   //dataPoints.
@@ -21,20 +22,10 @@ class Chart extends Component {
 		this.chart.render();
 	}
 	render() {
-		const options = {
-			title :{
-				text: "Dynamic Line Chart"
-			},
-			data: [{
-				type: "line",
-				dataPoints : dps
-			}]
-		}
-		
 		return (
 		<div>
 			<h1>React Dynamic Line Chart</h1>
-			<CanvasJSChart options = {options} 
+			<CanvasJSChart options = {options(dps)} 
 				onRef={ref => this.chart = ref}
 			/>
 		</div>
