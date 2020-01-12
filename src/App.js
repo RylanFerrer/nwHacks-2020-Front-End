@@ -6,7 +6,7 @@ import "./Styles/main.css"
 function App() {
   return(
   <Switch>
-    <Route path = "/data" component = {Home}/>
+    <Route path = "/" component = {Home}/>
 
   </Switch>
   )
