@@ -63,9 +63,6 @@ function App() {
         </div>
         <List/>
       </div>
-      
-      <NoiseAnalysis />
-      <Productivity />
     </div>
   );
 }
