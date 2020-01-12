@@ -63,7 +63,6 @@ export default function Home() {
         </div>
         <List/>
       </div>
-      <NoiseAnalysis />
     </div>
   );
 }

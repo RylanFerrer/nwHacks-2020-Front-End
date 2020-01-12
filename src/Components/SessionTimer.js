@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import clockIcon from "./images/clock.svg"
+import clock from "./images/clock.svg"
 import ComponentHeader from "./ComponentHeader"
 
 export default function SessionTimer(props) {
@@ -42,7 +42,7 @@ export default function SessionTimer(props) {
         <div className = "SessionTimer">
             <ComponentHeader name = "Session duration" />
             <div className="thing">
-                <img alt = "clock" src = {clockIcon} width = "90" height = "90" />
+                <img alt = "clock" src = {clock} width = "90" height = "90" />
                 {
                     // FIX THIS
                 }

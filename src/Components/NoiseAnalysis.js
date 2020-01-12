@@ -1,6 +1,8 @@
 import React from 'react'
 import ComponentHeader from './ComponentHeader'
 import noiseNobg from './images/noiseNobg.svg'
+import MultiLineChart from './Charts/MultiLineChart'
+import deals_graphic from './images/deals_graphic.svg'
 
 export default function NoiseAnalysis() {
     return (
@@ -11,9 +13,9 @@ export default function NoiseAnalysis() {
                     <img alt = "noise" src={noiseNobg} />
                     <div className="EnvAnalysisN__topHalf-result">
                         <div className="EnvAnalysisN__topHalf-resultdata">
-                            <div id="category">noise desc here</div>
+                            <div id="category">Study with slight noise such as leaves rustling</div>
                         </div>
-                        <div id="blurb">You work best at <span>something</span> db, which is similar to <span>noise desc</span> here.</div>
+                        <div id="blurb">You work best at <span>30</span> db, which is similar to <span>leaves rustling</span> here.</div>
                     </div>
                 </div>
                 <div className="EnvAnalysisN__topHalf-filter">Show: <a href>last session ></a></div>
@@ -30,8 +32,8 @@ export default function NoiseAnalysis() {
                     </div>
                     <div>Efficiency</div>
                 </div>
-                <div>
-                    chart goes here
+                <div className="name">
+                    <img src={deals_graphic} />
                 </div>
             </div> 
 
