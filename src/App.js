@@ -1,11 +1,14 @@
 import React from 'react';
-import Charts from './Components/Charts/Chart'
-import './Styles/main.css'
+import logo from './logo.svg';
+import './App.css';
+import "./Styles/main.css"
+import DistractionBreakdown from './Components/DistractionBreakdown'
 
 function App() {
   return (
     <div className="App">
-      <Charts/>
+      <h1>Hackathon </h1>
+      <DistractionBreakdown />
     </div>
   );
 }
