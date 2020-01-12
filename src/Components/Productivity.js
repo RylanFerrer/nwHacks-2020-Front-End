@@ -12,7 +12,6 @@ export default function Productivity() {
                     <div>Efficiency last session: 74.7%</div>
                     <div>Average Efficiency: 83%</div>
                 </div>
-                
             </div>
             <img src={header} />
         </div>
