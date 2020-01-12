@@ -1,5 +1,5 @@
 import React from 'react'
-import light from './Images/light.svg'
+import light from './images/light.svg'
 import ComponentHeader from './ComponentHeader'
 
 export default function AmbientLight(props) {
