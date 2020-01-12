@@ -25,7 +25,7 @@ function App() {
           productivityData = {...productivityData, [item]:data.distracted[item] }
         }
     } 
-    const results = await axios.get("http://localhost:8080/")
+    const results = await axios.get("http://localhost:5000/")
     setData(results.data)
   }
   useEffect(() => {
