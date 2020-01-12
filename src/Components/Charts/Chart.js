@@ -2,19 +2,26 @@
 import React, { Component } from 'react';
 import CanvasJSReact from '../../Assets/Plugins/canvasjs.react';
 import {options} from './Chart Data/options' 
+import Modal from '../Modal/Modal'
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 let dps = [{x: 1, y: 10}, {x: 2, y: 10},];   //dataPoints.
 let xVal = dps.length + 1;
 let yVal = 15;
-let updateInterval = 10000;
+let updateInterval = 1000;
 let option =  options(dps)
 class Chart extends Component {
 	state = {
-		onBreak: false
+		onBreak: false,
+		active: false
 	}
 	componentDidMount() {
 		setInterval(this.updateChart, updateInterval);
+	}
+	changeActive = () => {
+		this.setState({
+			active: !this.state.active
+		})
 	}
 	changeBreak = () => {
 		this.setState({
@@ -50,11 +57,13 @@ class Chart extends Component {
 	render() {
 		return (
 		<div>
+			<Modal  changeActive = {this.changeActive}active = {this.state.active}/>
 			<h1>React Dynamic Line Chart</h1>
 			<CanvasJSChart options = {option} 
 				onRef={ref => this.chart = ref}
 			/>
 			<button onClick = {() => this.changeBreak()}>Change Break</button>
+			<button onClick =  {() => this.changeActive()}>Modal</button>
 		</div>
 		);
 	}

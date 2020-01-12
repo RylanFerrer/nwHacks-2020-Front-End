@@ -11,7 +11,6 @@ export const options = (dps) => {
     axisX: {
         scaleBreaks: {
             customBreaks: [
-                
             ]
         }
     }, 
