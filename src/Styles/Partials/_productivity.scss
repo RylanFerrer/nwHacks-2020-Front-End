@@ -1,0 +1,26 @@
+.Productivity {
+    display: flex;
+    background: $purple;
+    border-radius: 20px;
+    justify-content: space-between;
+    img {
+        height:30vh;
+        width:33vw;
+        margin-right: 7%;
+    }
+}
+
+.welcome {
+    text-align: left;
+    margin: 4% 6%;
+    color: white;
+    &-change {
+        margin: 2% 0;
+    }
+    &-text {
+
+    }
+    &-data {
+        
+    }
+}
