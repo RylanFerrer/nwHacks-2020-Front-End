@@ -4,13 +4,15 @@ import Distraction from './Distraction'
 
 export default function DistractionBreakdown() {
     return (
-        <div class = "DistractionBreakdown">
+        <div className = "Window">
             <ComponentHeader>Breakdown</ComponentHeader>
-            <Distraction name = {"Instagram"} prcnt = {45} />
-            <Distraction name = {"Google Drive"} prcnt = {20} />
-            <Distraction name = {"Facebook"} prcnt = {15} />
-            <Distraction name = {"WSJ"} prcnt = {7.5} />
-            <Distraction name = {"Other"} prcnt = {12.5} />
+            {//TODO: put in name and time from json, choose highest 5 values
+}
+            <Distraction name = {"Instagram"} time = {92384} />
+            <Distraction name = {"Google Drive"} time = {12932} />
+            <Distraction name = {"Facebook"} time = {2133} />
+            <Distraction name = {"WSJ"} time = {1241} />
+            <Distraction name = {"Other"} time = {12487} />
         </div>
     )
 }
