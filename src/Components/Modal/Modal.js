@@ -3,7 +3,6 @@ export default class Modal extends React.Component {
   toggleClass = () => {
     this.setState({ active: !this.props.active });
   };
- 
   render() {
     return (
       <>
