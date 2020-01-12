@@ -4,7 +4,7 @@
     border-radius: 20px;
     justify-content: space-between;
     img {
-        height:30vh;
+        height:35vh;
         width:33vw;
         margin-right: 7%;
     }
@@ -16,11 +16,16 @@
     color: white;
     &-change {
         margin: 2% 0;
+        font-size: 30px;
+        span {
+            font-weight:bold;
+            font-size: 40px;
+        }
     }
     &-text {
-
+        font-size: 22.5px;
     }
     &-data {
-        
+
     }
 }

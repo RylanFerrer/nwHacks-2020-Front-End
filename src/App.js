@@ -65,8 +65,6 @@ function App() {
       </div>
       <NoiseAnalysis />
       <Productivity />
-      <div className = "chart__container"> 
-      </div> 
     </div>
   );
 }
