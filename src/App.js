@@ -9,6 +9,10 @@ import AmbientLight from './Components/AmbientLight';
 import AmbientNoise from './Components/AmbientNoise';
 import NoiseAnalysis from './Components/NoiseAnalysis';
 import StudyGraph from './Components/StudyGraph'
+import PieChart from './Components/Charts/PieChart';
+import Course from './Components/Course';
+import Productivity from './Components/Productivity';
+
 import axios from 'axios'
 function App() {
   const [isActive,setActive] = useState(false)
@@ -43,7 +47,11 @@ function App() {
 
   return (
     <div className="App">
-      <SessionTimer  sessionToggle = {toggle}/>
+
+      <div className="top-container">
+          <Course name="CS 213"/>
+          <SessionTimer toggleSession = {toggle} />
+      </div>
       <div className = "chart__container"> 
       <Chart data = {data}/>
       <DistractionCharts distractedData = {data.distracted}/>
@@ -56,7 +64,9 @@ function App() {
         <List/>
       </div>
       <NoiseAnalysis />
-      <StudyGraph/>
+      <Productivity />
+      <div className = "chart__container"> 
+      </div> 
     </div>
   );
 }

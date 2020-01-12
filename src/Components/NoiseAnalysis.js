@@ -1,5 +1,6 @@
 import React from 'react'
 import ComponentHeader from './ComponentHeader'
+import noiseNobg from './Images/noiseNobg.svg'
 
 export default function NoiseAnalysis() {
     return (
@@ -7,11 +8,10 @@ export default function NoiseAnalysis() {
             <ComponentHeader name="Ambient noise" />
             <div className="EnvAnalysisN__topHalf">
                 <div className="EnvAnalysisN__topHalf-resultbox">
-                    <img src="" />
+                    <img src={noiseNobg} />
                     <div className="EnvAnalysisN__topHalf-result">
                         <div className="EnvAnalysisN__topHalf-resultdata">
                             <div id="category">noise desc here</div>
-                            <div id="decibel">something db</div>
                         </div>
                         <div id="blurb">You work best at <span>something</span> db, which is similar to <span>noise desc</span> here.</div>
                     </div>
@@ -20,14 +20,15 @@ export default function NoiseAnalysis() {
             </div>
             <div className="EnvAnalysisN_chartbox">
                 <div className="EnvAnalysisN_chartbox-legend">
-                    <div className="EnvAnalysisN_chartbox-legendentry">
+                    <div className="EnvAnalysisN__chartbox-legendentry">
                         <div id="noise_circle"></div>
-                        <div>Noise</div>
+                       
                     </div>
-                    <div className="EnvAnalysisN_chartbox-legendentry">
+                    <div>Noise</div>
+                    <div className="EnvAnalysisN__chartbox-legendentry">
                         <div id="eff_circle"></div>
-                        <div>Efficiency</div>
                     </div>
+                    <div>Efficiency</div>
                 </div>
                 <div>
                     chart goes here

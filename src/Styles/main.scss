@@ -11,11 +11,17 @@
 @import "./Partials/envAnalysisN";
 @import "./Partials/list";
 @import "./Partials/study";
+@import "./Partials/productivity";
  body {
     font-family: 'Poppins', sans-serif;
      background-color:  #E5E5E5;
  }
  
+.top-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
  .middle-container {
     justify-content: space-evenly;
     display: flex;

@@ -1,18 +1,17 @@
 import React, { Component } from 'react'
 import CanvasJSReact from '../../Assets/Plugins/canvasjs.react';
-let data = [{y: 41, label: "Social Media"}, {y: 24, label:"News"}, {y:20, label: "Document"}, {y: 13, label: "Design"}];
+import {PieOptions} from './Chart Data/PieOptions';
+let data = [{y: 41, label: "Social Media", color: "#713ADB"}, {y: 24, label:"News", color: "#49B8FF"}, {y:20, label: "Document", color: "#FF8C56"}, {y: 13, label: "Design", color: "#FC5181"}];
 const CanvasJSChart = CanvasJSReact.CanvasJSChart;
+let option = PieOptions(data);
 
 class PieChart extends Component {
     render() {
         return (
             <div>
-                <div className = "chart__wrapper">
-				<ComponentHeader name = "Efficency"/>
 				<CanvasJSChart id = "chart" options = {option} 
 					onRef={ref => this.chart = ref}
 				/>
-			    </div>
             </div>
         )
     }
