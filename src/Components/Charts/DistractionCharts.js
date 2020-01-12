@@ -3,11 +3,6 @@ import ComponentHeader from '../ComponentHeader';
 export default function DistractionCharts(props) 
 {
     const {distractedData} = props;
-    const distractions = {
-        Instagram: 1.6,
-        Sleeping: 10,
-        SpacingOut: 4.1
-    }
     const colors = ['#713ADB',' #49B8FF','#FF8C56','#FC5181']
     let distract = [Object.keys(distractedData)]
     let values =  [Object.values(distractedData)]
