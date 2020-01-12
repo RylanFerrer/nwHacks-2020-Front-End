@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Charts from './Components/Charts/Chart'
+import './Styles/main.css'
 
 function App() {
   return (
     <div className="App">
-      <h1>Hackathon </h1>
+      <Charts/>
     </div>
   );
 }
