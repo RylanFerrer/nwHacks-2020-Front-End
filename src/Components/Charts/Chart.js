@@ -10,7 +10,6 @@ let dps = [
 ];   //dataPoints.
 let xVal = dps.length + 1;
 let yVal = 15;
-let updateInterval = 5000;
 
 let option =  options(dps )
 

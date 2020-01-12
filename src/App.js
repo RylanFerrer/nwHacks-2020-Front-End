@@ -8,7 +8,7 @@ import SessionTimer from './Components/SessionTimer';
 import AmbientLight from './Components/AmbientLight';
 import AmbientNoise from './Components/AmbientNoise';
 import NoiseAnalysis from './Components/NoiseAnalysis';
-import AmibientNoise from './Components/AmbientNoise'
+import StudyGraph from './Components/StudyGraph'
 import axios from 'axios'
 function App() {
   const [isActive,setActive] = useState(false)
@@ -17,7 +17,6 @@ function App() {
   const toggle  =  () => {
     setActive(!isActive);
   }
-  
   const tick = async() => {
     for(let item in data.distracted) {
         if(item in productivityData)
@@ -44,12 +43,11 @@ function App() {
 
   return (
     <div className="App">
-      <SessionTimer />
+      <SessionTimer  sessionToggle = {toggle}/>
       <div className = "chart__container"> 
-      <Chart/>
+      <Chart data = {data}/>
       <DistractionCharts distractedData = {data.distracted}/>
       </div> 
-      <SessionTimer toggleSession = {toggle} />
       <div className = "middle-container">
         <div className = "middle-container__ambient">
         <AmbientLight data = {Math.floor(data.light)} />
@@ -57,12 +55,8 @@ function App() {
         </div>
         <List/>
       </div>
-      
       <NoiseAnalysis />
-      <div className = "chart__container"> 
-      <Chart data = {data}/>
-      <DistractionCharts distractedData = {data.distracted}/>
-      </div> 
+      <StudyGraph/>
     </div>
   );
 }
