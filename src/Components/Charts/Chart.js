@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import CanvasJSReact from '../../Assets/Plugins/canvasjs.react';
 import {options} from './Chart Data/options' 
@@ -58,5 +59,4 @@ class Chart extends Component {
 		);
 	}
 }
-
 export default Chart;

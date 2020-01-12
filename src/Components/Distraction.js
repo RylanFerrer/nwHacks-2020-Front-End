@@ -1,5 +1,4 @@
 import React from 'react'
-import './Distraction.css'
 
 export default function Distraction(props) {
     const {name, prcnt} = props
