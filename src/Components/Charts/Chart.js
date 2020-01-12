@@ -67,9 +67,6 @@ class Chart extends Component {
 					onRef={ref => this.chart = ref}
 				/>
 			</div>
-			<button onClick = {() => this.changeBreak()}>Change Break</button>
-			<button onClick =  {() => clearInterval(this.time)}>Done</button>
-			<button onClick =  {() => this.changeActive()}>Modal</button>
 			</div>
 	
 		);
