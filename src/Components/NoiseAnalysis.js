@@ -11,7 +11,7 @@ export default function NoiseAnalysis() {
             <ComponentHeader name="Ambient noise" />
             <div className="EnvAnalysisN__topHalf">
                 <div className="EnvAnalysisN__topHalf-resultbox">
-                    <img src={noiseNobg} />
+                    <img alt = "noise" src={noiseNobg} />
                     <div className="EnvAnalysisN__topHalf-result">
                         <div className="EnvAnalysisN__topHalf-resultdata">
                             <div id="category">Study with light noise such as leaves rustling</div>

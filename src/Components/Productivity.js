@@ -13,7 +13,7 @@ export default function Productivity() {
                     <div>Average Efficiency: 83%</div>
                 </div>
             </div>
-            <img src={header} />
+            <img alt = "Header" src={header} />
         </div>
     )
 }
