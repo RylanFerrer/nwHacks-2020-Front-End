@@ -4,8 +4,10 @@ import DistractionCharts from "./Components/Charts/DistractionCharts";
 import List from './Components/Todo List/List'
 import './App.css';
 import "./Styles/main.css"
-import SessionTimer from './Components/SessionTimer'
+import SessionTimer from './Components/SessionTimer';
 import AmbientLight from './Components/AmbientLight';
+import AmbientNoise from './Components/AmbientNoise';
+import NoiseAnalysis from './Components/NoiseAnalysis';
 import AmibientNoise from './Components/AmbientNoise'
 import axios from 'axios'
 function App() {
@@ -42,21 +44,25 @@ function App() {
 
   return (
     <div className="App">
+      <SessionTimer />
+      <div className = "chart__container"> 
+      <Chart/>
+      <DistractionCharts distractedData = {data.distracted}/>
+      </div> 
       <SessionTimer toggleSession = {toggle} />
       <div className = "middle-container">
         <div className = "middle-container__ambient">
         <AmbientLight data = {Math.floor(data.light)} />
-        <AmibientNoise noiseData = {Math.floor(data.noise)}/>
+        <AmbientNoise noiseData = {Math.floor(data.noise)}/>
         </div>
         <List/>
       </div>
       
+      <NoiseAnalysis />
       <div className = "chart__container"> 
       <Chart data = {data}/>
       <DistractionCharts distractedData = {data.distracted}/>
       </div> 
-  
-     
     </div>
   );
 }
